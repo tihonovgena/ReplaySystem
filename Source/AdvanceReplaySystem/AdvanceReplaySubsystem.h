@@ -14,12 +14,15 @@ class ADVANCEREPLAYSYSTEM_API UAdvanceReplaySubsystem : public UReplaySubsystem
 
 public:
 	UFUNCTION(BlueprintCallable)
-	void StartRecordReplay(const FString& InName, const FString& FriendlyName);
+	void StartRecordReplay(const FString& Name, const FString& FriendlyName);
 
 	UFUNCTION(BlueprintCallable)
 	void StopRecordReplay();
 
 	UFUNCTION(BlueprintCallable)
 	void StartPlayReplay(const FString& Name);
+
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	bool IsPlayingReplay();
 
 };
