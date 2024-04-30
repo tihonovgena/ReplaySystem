@@ -14,6 +14,8 @@ UCLASS()
 class ADVANCEREPLAYSYSTEM_API AAdvanceReplayPlayerController : public APlayerController
 {
 	GENERATED_BODY()
+
+	AAdvanceReplayPlayerController();
 	
 protected:
 	UFUNCTION(BlueprintCallable)

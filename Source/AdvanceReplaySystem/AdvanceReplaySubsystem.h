@@ -25,4 +25,13 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintPure)
 	bool IsPlayingReplay();
 
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	float GetReplayTotalTime() const;
+
+	UFUNCTION(BlueprintCallable)
+	void GoToCustomReplayTime(const float TimeInSecond);
+
+	UFUNCTION(BlueprintCallable)
+	void PauseReplay(APlayerState* Pauser);
+
 };

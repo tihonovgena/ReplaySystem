@@ -5,6 +5,12 @@
 
 #include "Blueprint/UserWidget.h"
 
+AAdvanceReplayPlayerController::AAdvanceReplayPlayerController()
+{
+	PrimaryActorTick.bTickEvenWhenPaused = true;
+	bShouldPerformFullTickWhenPaused = true;
+}
+
 void AAdvanceReplayPlayerController::ShowMenuWidgetClass(TSubclassOf<UUserWidget> WidgetClass)
 {
 	
